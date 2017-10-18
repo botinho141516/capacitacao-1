@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin:0px;
+    padding: 1px 0 0 0;
+}
+
+/*.borda {
+    border: 1px solid red;
+}
+*/
+
+.container-fluid {
+  padding-right: -15px;
+  padding-left: -15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+    background-color: rgba(200,200,200,0.4);
+
+}
+
+.navbar-img {
+    height:67px;
+    padding:0;
+    margin:0;
+}
+
+.navbar-logo {
+    height:68px;
+    padding:0;
+    margin: 0 30% 0 1%;
+}
+
+.navbar-btn {
+    width:122px;
+
+}
+
+.active {
+    background-color: rgb(20,127,150);
+}
+
+#navbar {
+
+}
+
+#logo-a {
+    padding:0;
+    margin:2px 0 0 5%;
+}
+
+
+ul li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding:25px 0;
+    text-decoration: none;
+    font-size: 120%;
+    margin:0 3%;
+}
+
+ul li:hover:not(.active):not(.navbar-logo) {
+    background-color: rgb(40,147,196);
+}
+@media screen and (max-width: 492px){
+    .navbar-btn {
+        width: 100%;       
+    }
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
