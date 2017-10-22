@@ -1,0 +1,129 @@
+
+
+html, body {
+    height: 100%;
+}
+body {
+    margin:0px;
+    padding: 1px 0 0 0;
+    overflow-x: : hidden;
+    overflow-y: : hidden;
+}
+
+/*Misc*/
+.borda {
+
+	border:1px solid red;
+}
+
+
+/*Full Footer*/
+.footer-frame {
+	height: 20vh;
+	bottom: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color:rgb(200,200,180);
+}
+
+
+
+/*MEJ*/
+.footer-logo-mej {
+	height:18vh;
+	margin:auto 2%;
+}
+
+.footer-logo-mej-img {
+	height:18vh;
+	margin:auto 4%;
+}
+
+
+
+
+/*byron*/
+.footer-logo-byron {
+	height:auto;
+	margin:auto 2%;
+}
+
+.footer-logo-byron-text {
+	display: block;
+	font-size:x-large; 
+}
+
+
+.footer-logo-byron-img {
+	height: 8vh;
+	width: inherit;
+}
+
+
+
+/*Social*/
+.footer-social {
+	height:20vh;
+	display: flex;
+	justify-content: space-between;
+	width:20%;
+}
+
+.icon-detail {
+	color:black;
+	font-size:7vh;
+	margin: auto 5%;
+}
+
+@media screen and (max-width: 615px) {
+	
+
+	/*Full Footer*/
+	.footer-frame {
+		height: 40vh;
+		bottom: 0px;
+		width: 100%;
+		display: flex;
+		background-color:rgb(200,200,180);
+		flex-wrap: wrap;
+	}
+	
+	/*MEJ*/
+	.footer-logo-mej {
+		height:15vh;
+		width:45%;
+		margin:auto 2%;
+	}
+	
+	.footer-logo-mej-img {
+		height:18vh;
+		margin:auto 4%;
+	}	
+
+
+	/*byron*/
+	.footer-logo-byron {
+		height:auto;
+		margin:auto 2%;
+		width: 45%;
+	}
+
+	.footer-logo-byron-img {
+		height:auto;
+		margin:auto;
+		width: 100%;
+	}
+
+
+	/*Social*/
+	.footer-social {
+		height:9vh;
+		display: flex;
+		width:100%;
+	}
+
+
+}
+
+
