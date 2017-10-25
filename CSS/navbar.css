@@ -5,11 +5,11 @@ body {
     margin:0px;
     padding: 1px 0 0 0;
 }
-
-/*.borda {
+/*
+.borda {
     border: 1px solid red;
-}
-*/
+}*/
+
 
 .container-fluid {
   padding-right: -15px;
@@ -24,7 +24,7 @@ body {
     padding: 0;
     overflow: hidden;
     width:100%;
-    background-color: rgba(200,200,200,0.4);
+    background-color: rgba(200,200,180,0.4);
 
 }
 
@@ -45,12 +45,15 @@ body {
 
 }
 
-.active {
-    background-color: rgb(20,127,150);
+.navbar-icon {
+    position: fixed;
+    top:10px;
+    right:5%;
+    font-size: 34px;
 }
 
-#navbar {
-
+.active {
+    background-color: rgb(20,127,150);
 }
 
 #logo-a {
@@ -74,17 +77,16 @@ li a {
     margin:0 3%;
 }
 
-ul li:hover:not(.active):not(.navbar-logo) {
+ul li:hover:not(.active):not(.navbar-logo):not(.navbar-icon) {
     background-color: rgb(40,147,196);
 }
-@media screen and (max-width: 492px){
-    .navbar-btn {
-        width: 100%;       
-    }
-}
 
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+
+@media screen and (max-width: 700px) {
+
+    ul li.navbar-icon {
+        float: right;
+        display: inline-block;
+    }
 }
 
