@@ -4,7 +4,6 @@
 
 	// ONLOAD RESPONSIVE
 	window.onload = function() {
-
 		if(window.innerWidth<=860)
 		{
 			var marg = window.innerWidth/50;
@@ -99,6 +98,8 @@
 
 		var lista = document.getElementsByClassName("navbar-btn");
 		if(lista[1].style.display == "none") {
+
+      		document.getElementById("navbar-ul").style.backgroundColor = "rgb(200,200,160";
 			for(j=0;j<4;j++) {
 
 				lista[j].style.display = "";

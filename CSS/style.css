@@ -1,28 +1,177 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin:0px;
+    padding: 1px 0 0 0;
+    padding: 0;
+
+}
+
+.borda{
+    border: 1px solid red;
+}
+
+
+
+/*SideBar*/
+.index-side {
+    top:30%;
+    height:200px;
+    width:40px;
+    position:fixed;
+    right: 0px;
+}
+
+.index-side-social { 
+  list-style-type: none;
+  display: initial;
+}
+
+.index-side-social-list {
+  height:40px;
+  margin-bottom:10px;
+
+}
+
+.index-side-social-list-link {
+
+}
+
+.index-side-single-social {
+  border-radius: 50%;
+  height:40px;
+}
+
+
+
+/*WHO*/
+.index-who-frame {
+  min-height:300px;
+  width:100%;
+  margin:auto;
+  border-radius:8px;
+  background-image: url(../IMG/blueDiv.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.index-who-img {
+  display: flex;
+}
+
+.index-who-title {
+  text-align: center;
+  color: rgb(240,240,240);
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px rgb(0,0,0);
+
+}
+
+.index-who-text {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 200;
+  color:rgb(240,240,240);
+  margin: 0 auto 0 auto;
+  min-width: 300px;
+  max-width: 900px;
+  text-shadow: 1px 1px rgb(0,0,0);
+
+
+}
+
+.index-who-mev {
+  display: flex;
+  justify-content: space-around;
+}
+
+.index-who-mev-m {
+  min-width:300px;
+  max-width: 500px;
+}
+
+
+.index-who-mev-m h1 {
+  text-align: center;
+  color:white;
+  font-size:45px;
+  text-shadow: 2px 2px rgb(0,0,0);
+}
+
+.index-who-mev-m p {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(240,240,240);
+  text-shadow: 1px 1px rgb(0,0,0);
+}
+
+.index-who-mev-v {
+  min-width:300px;
+  max-width: 500px;
+}
+.index-who-mev-v h1 {
+  text-align: center;
+  color:white;
+  font-size:45px;
+  text-shadow: 2px 2px rgb(0,0,0);
+}
+
+.index-who-mev-v p {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(240,240,240);
+  text-shadow: 1px 1px rgb(0,0,0);
+}
+
+
+/*VALORES*/
+.index-valores-frame {
+  height:500px;
+  width:100%;
+  margin:auto;
+  background-image: url(../IMG/crowd.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/*PARCEIROS*/
+.index-parceiros-frame {
+  background-image: url(../IMG/woodDiv.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*CARROSSEL*/
 .mySlides {
   display:none
 }
 
 .slide-container {
-  width: 33%;
-  height: 15vh;
+  width: 50%;
+  height: 10vh;
   margin: auto;
 }
 
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
   color: black;
   font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
 
 .next {
+  float: right; 
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -39,6 +188,17 @@
   animation-duration: 1.5s;
 }
 
+.index-contact-frame ul {
+  display: inline-grid;
+
+}
+
+form ul li {
+  height:120%;
+  width:130%;
+  float: left;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -50,6 +210,45 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+ .index-contact-frame {
+  align-content: center;
+ }
+
+.index-contact-frame ul li {
+  font-size: 18px;
+  list-style-type: none;
+
+}
+.index-contact-frame ul li label{
+    display:flex;
+ }
+
+
+
+@media only screen and (max-width: 600px) {
   .prev, .next {font-size: 11px}
+
+  .index-who-text {
+    font-size: 20px;
+    font-weight: 200;
+    color:rgb(240,240,240);
+    margin: 0 auto 0 auto;
+    width: 400px;
+    text-shadow: 1px 1px rgb(0,0,0);
+  }
+
+  .index-who-mev {
+  display: block;
+}
+
+}
+@media only screen and (max-width: 800px) {
+  .index-who-text {
+    font-size: 20px;
+    font-weight: 200;
+    color:rgb(240,240,240);
+    margin: 0 auto 0 auto;
+    width: 500px;
+    text-shadow: 2px 2px rgb(0,0,0);
+  }
 }

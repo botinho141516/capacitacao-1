@@ -1,25 +1,7 @@
 
-
-html, body {
-    height: 100%;
-}
-body {
-    margin:0px;
-    padding: 1px 0 0 0;
-    overflow-x: : hidden;
-    overflow-y: : hidden;
-}
-
-/*Misc*/
-.borda {
-
-	border:1px solid red;
-}
-
-
 /*Full Footer*/
 .footer-frame {
-	height: 20vh;
+	height: 18vh;
 	bottom: 0px;
 	width: 100%;
 	display: flex;
@@ -76,12 +58,12 @@ body {
 	margin: auto 5%;
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 680px) {
 	
 
 	/*Full Footer*/
 	.footer-frame {
-		height: 40vh;
+		height: 35vh;
 		bottom: 0px;
 		width: 100%;
 		display: flex;
