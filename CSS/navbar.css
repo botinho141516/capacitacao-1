@@ -1,3 +1,7 @@
+#logo-a {
+    padding:0;
+    margin:2px 0 0 5%;
+}
 
 .container-fluid {
   padding-right: -15px;
@@ -5,8 +9,10 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+
 .navbar-frame {
-    height:70px;
+    height:79px;
     background-color: rgb(200,200,180);
     width:100%;
 }
@@ -26,21 +32,21 @@
 
 }
 
-
 .navbar-img {
-    height:67px;
+    height:79px;
     padding:0;
     margin:0;
 }
 
 .navbar-logo {
-    height:68px;
+    height:80px;
     padding:0;
     margin: 0 30% 0 1%;
 }
 
 .navbar-btn {
     width:122px;
+    height: 80px;
 
 }
 
@@ -56,10 +62,6 @@
     background-color: rgb(20,127,150);
 }
 
-#logo-a {
-    padding:0;
-    margin:2px 0 0 5%;
-}
 
 
 .navbar-btn a {
@@ -68,7 +70,7 @@
     text-align: center;
     padding:25px 0;
     text-decoration: none;
-    font-size: 120%;
+    font-size: 20px;
     margin:0 3%;
 }
 

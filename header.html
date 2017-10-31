@@ -14,45 +14,35 @@
     </head> 
     
     <body>
-
-        <div id="navbar" class="borda">
-
-            <ul id="navbar-ul" class="navbar borda">
-                <li class="navbar-logo borda" id="logo-li">
+        <div id="navbar" class="">
+            <ul id="navbar-ul" class="navbar ">
+                
+                <li class="navbar-logo " id="logo-li">
                     <a id="logo-a" href="#home">
                         <img class="navbar-img" src="IMG/MEJ.png">
                     </a>
                 </li>
 
-                <li onclick="(changeActive(this))" class="navbar-btn active borda">
-                    <a class="" href="#who">
-                        Quem Somos
-                    </a>
+                <li id="whoNav" onclick="(changeActive(this))" class="navbar-btn active">
+                    <a href="#home">Quem Somos</a>
                 </li>
 
-                <li onclick="(changeActive(this))" class="navbar-btn borda">
-                    <a class="" href="#objetivos">
-                      Objetivos
-                    </a>
+                <li id="valoresNav" onclick="(changeActive(this))" class="navbar-btn">
+                    <a href="#valores">Valores</a>
                 </li>
 
-                <li onclick="(changeActive(this))" class="navbar-btn borda">
-                    <a class="" href="#parceiros">
-                        Parceiros
-                    </a>
+                <li id="parceirosNav" onclick="(changeActive(this))" class="navbar-btn ">
+                    <a href="#parceiros">Parceiros</a>
                 </li>
 
-                <li onclick="(changeActive(this))" class="navbar-btn borda">
-                    <a href="#contact">
-                        Fale-Conosco
-                    </a>
+                <li id="contactNav" onclick="(changeActive(this))" class="navbar-btn ">
+                    <a href="#contact">Fale-Conosco</a>
                 </li>
 
-                <li onclick="(showNavbar())" id="navbar-icon" class="navbar-icon borda">&#9776;</li>
-
+                <li onclick="(showNavbar())" id="navbar-icon" class="navbar-icon ">
+                    &#9776;
+                </li>
             </ul>
-        </div>
-        <div style="background-color: red;width: 100%;height: 100vh;"></div>
-
+        </div>';
     </body>
 </html>

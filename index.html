@@ -15,7 +15,7 @@
         
     </head> 
     
-    <body style="overflow-x: hidden;">
+    <body onscroll="changeActiveByScroll()">
 
         <div class="index-side borda">
             <ul class="index-side-social">
@@ -40,10 +40,9 @@
             </ul>
         </div>
 
-        <div class="navbar-frame"></div>
+        <div id="home" class="navbar-frame"></div>
         <div id="header"></div>
         <div id="who" class="index-who-frame borda" >
-            <img class="index-who-img borda" src="IMG/.png">
 
             <h1 class="index-who-title">
                 Movimento Empresa Júnior
@@ -75,235 +74,131 @@
             </div>
             <br><br><br>
         </div>
+
+        <div id="valores" class="index-valores-frame borda" onscroll="changeActiveByScroll(this)">
+            <div class="index-valores-title">
+                <h1>Valores</h1>
+            </div>
+
+            <div class="index-valores-carrosel slide-container borda">
+                <div class="carrosel-arrows borda">
+                    <a class=" prev" onclick="slides(-1)">&#10094;</a>
+                    <a class=" next" onclick="slides(1)">&#10095;</a>
+                </div>
+
+                <div class="mySlides fade borda">
+                    <div class="mySlides-img-frame">
+                        <img class="borda" src="IMG/Valores/orgulho.png">
+                    </div>
+                    
+                    <h1>Orgulho de ser MEJ</h1>
+                    <p>Somos apaixonados pelo nosso propósito e trabalhamos por um movimento em que acreditamos. Nosso orgulho de ser júnior é o que nos faz gigantes pela própria natureza.</p>
+                </div>
+
+                <div class="mySlides fade borda">
+                    <div class="mySlides-img-frame">
+                        <img class="borda" src="IMG/Valores/sinergia.png">
+                    </div>
+
+                    <h1>Sinergia</h1>
+                    <p>A despeito de nossa diversidade, somos unidos por visões compartilhadas e trabalhamos em cooperação, para fazer com que o conjunto de nossas forças seja maior que a soma de suas partes.</p>
+                </div>
+
+                <div class="mySlides fade borda">
+                    <div class="mySlides-img-frame">
+                        <img src="IMG/Valores/compromisso.png">
+                    </div>
+
+                    <h1>Compromisso com Resultados</h1>
+                    <p>Buscamos gerar valor para nossas partes interessadas e nos comprometemos com a superação das suas expectativas, de forma perene.</p>
+                </div>
+
+                <div class="mySlides fade borda">
+                    <div class="mySlides-img-frame">
+                        <img src="IMG/Valores/transparencia.png">
+                    </div>
+
+                    <h1>Transparência</h1>
+                    <p>Somos transparente em todas as nossas ações, acertadas ou erradas. Temos plena consciência que um futuro melhor se faz com ética e compromisso com a verdade.</p>
+                </div>
+
+                <div class="mySlides fade borda">
+                    <div class="mySlides-img-frame">
+                        <img src="IMG/Valores/postura.png">
+                    </div>
+
+                    <h1>Postura Empreendedora</h1>
+                    <p>Para formar empreendedores no MEJ, é necessário que sejamos empreendedores. Inconformismo, visão para oportunidades, pensamento inovador e capacidade de realização são características que nos definem.</p>
+                </div>
+
+            </div>
+        </div>
         
 
-      <!--  <div id="parceiros" class="index-parceiros-frame">
+        <div id="parceiros" class="index-parceiros-frame">
 
-            <div class="slideshow-mantedores slide-container">
-                
-                <div class=" mySlidesM fade">
-                    <img src="IMG/Mantedores/ambev.png">
+            <div class="index-parceiros-mantedores">
+                <h1 class="borda">PATROCINADORES</h1> 
 
-                </div>
-
-                <div class=" mySlidesM fade">
-                    <img src="IMG/Mantedores/bradesco.png">
-
-                </div>
-
-                <div class=" mySlidesM fade">
-                    <img src="IMG/Mantedores/caixa.png">
-
-                </div>
-
-                <div class=" mySlidesM fade">
+                <div class="index-parceiros-mantedores-img-block borda">
                     <img src="IMG/Mantedores/globo.png">
-
+                </div>
+                
+                <div class="index-parceiros-mantedores-img-block borda">
+                    <img src="IMG/Mantedores/bradesco.png">
                 </div>
 
-                <div class=" mySlidesM fade">
-                    <img src="IMG/Mantedores/raizen.png">
-
+                <div class="index-parceiros-mantedores-img-block borda">
+                    <img src="IMG/Mantedores/caixa.png">
                 </div>
 
-                <div class=" mySlidesM fade">
+                <div class="index-parceiros-mantedores-img-block borda">
                     <img src="IMG/Mantedores/sicoob.png">
-
                 </div>
 
-                <div class=" mySlidesM fade">
+                <div class="index-parceiros-mantedores-img-block borda">
+                    <img src="IMG/Mantedores/ambev.png">
+                </div>
+
+                <div class="index-parceiros-mantedores-img-block borda">
+                    <img src="IMG/Mantedores/raizen.png">
+                </div>
+
+
+                <div class="index-parceiros-mantedores-img-block borda">
                     <img src="IMG/Mantedores/votorantim.png">
-
                 </div>
 
-                <div class=" mySlidesM fade">
+                <div class="index-parceiros-mantedores-img-block borda">
                     <img src="IMG/Mantedores/yara.png">
-
-                </div>
-            </div>
-
-            <a class=" prev" onclick="slides(-1,'M')">&#10094;</a>
-            <a class=" next" onclick="slides(1,'M')">&#10095;</a>
-       
-
-            <div class="slide-container">
-                <div class=" slideshow-parcerias slide-container">
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/aiesec.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/aliança.jpg">
-
-                    </div>
-
-                     <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/bain.png">
-
-                    </div>
-
-                     <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/ciaTalentos.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/cndl.jpg">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/conaJe.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/endeavor.jpg">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/folha.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/fundacaoEstudar.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/gympass.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/hemera.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/jade.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/jc3.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/jet.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/mba.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/mcKinsey.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/neoway.jpg">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/prove.png">
-
-                    </div>
-
-                    <div class=" mySlidesParc fade">
-                        <img src="IMG/Parceiros/resultadosDigitais.png">
-
-                    </div>
-
-                </div>
-            </div>
-
-            <a class=" prev" onclick="slides(-1,'Parc')">&#10094;</a>
-            <a class=" next" onclick="slides(1,'Parc')">&#10095;</a>
-
-            <div class=" slide-container">
-                <div class=" slideshow-patrocinadores slide-container">
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/falconi.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/gsk.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/iel.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/irl.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/itau.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/kraft.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/matchBox.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/suzano.png">
-
-                    </div>
-
-                    <div class=" mySlidesP fade">
-                        <img src="IMG/Patrocinadores/universum.png">
-
-                    </div>
-                    
                 </div>
 
-                <a class=" prev" onclick="slides(-1,'P')">&#10094;</a>
-                <a class=" next" onclick="slides(1,'P')">&#10095;</a>
-
             </div>
-        </div> -->
+        </div>
+
 
         <div id="contact" class="index-contact-frame borda">
-            <h1> Fale Conosco! </h1>
-                <ul>
-                    <li>
-                        <input type="text" name="Nome" placeholder="Nome:">
-                    </li>
-                    
-                    <li>
-                        <input type="text" name="Email" placeholder="Email:">
-                    </li>
-                    
-                    <li>
-                        <input type="text" name="Assunto" placeholder="Assunto:">
-                    </li>
-                    
-                    <li>
-                        <textarea rows="6" cols=40 placeholder="Descrição:"></textarea> 
-                    </li>
-                </ul>
-            </form>
+            <h1>Fale Conosco!</h1>
+            <ul>
+                <li>
+                    <input type="text" name="Nome" placeholder="Nome:">
+                </li>
+                
+                <li>
+                    <input type="text" name="Email" placeholder="Email:">
+                </li>
+                
+                <li>
+                    <input type="text" name="Assunto" placeholder="Assunto:">
+                </li>
+                
+                <li>
+                    <textarea rows="6" cols=40 placeholder="Descrição:"></textarea> 
+                </li>
+                <li>
+                    <button>Enviar</button>
+                </li>
+            </ul>
         </div>
         <div id="footer"></div>
     </body>
