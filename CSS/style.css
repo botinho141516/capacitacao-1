@@ -45,13 +45,14 @@ body {
 
 
 
+
 /*WHO*/
 .index-who-frame {
   min-height:300px;
   width:100%;
   margin:auto;
   border-radius:8px;
-  background-image: url(../IMG/blueDiv.jpg);
+  background-image: url(../IMG/Background/blueDiv.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -67,7 +68,7 @@ body {
   color: rgb(240,240,240);
   font-weight: bold;
   font-size: 40px;
-  text-shadow: 2px 2px rgb(0,0,0);
+  text-shadow: 2px 2px 1px rgb(0,0,0);
 
 }
 
@@ -128,127 +129,192 @@ body {
 }
 
 
+
+
 /*VALORES*/
 .index-valores-frame {
   height:500px;
   width:100%;
   margin:auto;
-  background-image: url(../IMG/crowd.png);
+  background-image: url(../IMG/Background/crowd.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 /*PARCEIROS*/
-.index-parceiros-frame {
-  background-image: url(../IMG/woodDiv.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+  .index-parceiros-frame {
+    background-image: url(../IMG/Background/woodDiv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
 /*CARROSSEL*/
-.mySlides {
-  display:none
-}
-
-.slide-container {
-  width: 50%;
-  height: 10vh;
-  margin: auto;
-}
-
-.prev, .next {
-  cursor: pointer;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  float: right; 
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(100,100,100,0.8);
-}
-
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-.index-contact-frame ul {
-  display: inline-grid;
-
-}
-
-form ul li {
-  height:120%;
-  width:130%;
-  float: left;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
- .index-contact-frame {
-  align-content: center;
- }
-
-.index-contact-frame ul li {
-  font-size: 18px;
-  list-style-type: none;
-
-}
-.index-contact-frame ul li label{
-    display:flex;
- }
-
-
-
-@media only screen and (max-width: 600px) {
-  .prev, .next {font-size: 11px}
-
-  .index-who-text {
-    font-size: 20px;
-    font-weight: 200;
-    color:rgb(240,240,240);
-    margin: 0 auto 0 auto;
-    width: 400px;
-    text-shadow: 1px 1px rgb(0,0,0);
+  .mySlides {
+    display:none
   }
 
-  .index-who-mev {
-  display: block;
-}
-
-}
-@media only screen and (max-width: 800px) {
-  .index-who-text {
-    font-size: 20px;
-    font-weight: 200;
-    color:rgb(240,240,240);
-    margin: 0 auto 0 auto;
-    width: 500px;
-    text-shadow: 2px 2px rgb(0,0,0);
+  .slide-container {
+    width: 50%;
+    height: 10vh;
+    margin: auto;
   }
-}
+
+  .prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .next {
+    float: right; 
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(100,100,100,0.8);
+  }
+
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+
+/*CONTACT*/
+  .index-contact-frame {
+    align-content: center;
+    background-image: url(../IMG/Background/snowDiv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .index-contact-frame h1 {
+    text-align: center;
+    color: rgb(70,70,70);
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgb(100,100,100);
+  }
+  .index-contact-frame ul {
+    display: inline-grid;
+    margin-left: calc(50% - 260px);
+  }
+  .index-contact-frame ul li {
+    list-style-type: none;
+    margin:6px 0;
+  }
+  .index-contact-frame ul li input {
+    height:30px;
+    width:300px;  
+    padding-left: 4px;
+    font-size: 19px;
+    color:#414141;
+    border-radius: 3px;
+    font-family: "Times New Roman",times,serif;
+
+  }
+  .index-contact-frame ul li textarea {
+    min-height:100px; 
+    max-height:200px; 
+    min-width: 300px;
+    max-width: 500px;
+    padding-left: 6px;
+    font-size: 19px;
+    font-family: "Times New Roman",times,serif;
+    color:#414141;
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 1px gray;
+  }
+
+
+
+/*RESPONSIVE*/
+  @media only screen and (max-width: 600px) {
+    .prev, .next {font-size: 11px}
+
+    .index-who-text {
+      font-size: 20px;
+      font-weight: 200;
+      color:rgb(240,240,240);
+      margin: 0 auto 0 auto;
+      width: 400px;
+      text-shadow: 1px 1px rgb(0,0,0);
+    }
+
+    .index-who-mev {
+      display: block;
+    }
+
+  }
+  @media only screen and (max-width: 800px) {
+    .index-who-text {
+      font-size: 20px;
+      font-weight: 200;
+      color:rgb(240,240,240);
+      margin: 0 auto 0 auto;
+      width: 500px;
+      text-shadow: 2px 2px rgb(0,0,0);
+    }
+  }

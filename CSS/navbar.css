@@ -78,7 +78,7 @@
 }
 
 
-ul li:hover:not(.active):not(.navbar-logo):not(.navbar-icon):not(.index-contact-list-member) {
+ul li:hover:not(.active):not(.navbar-logo):not(.navbar-icon):not(.index-contact-frame ul li) {
     background-color: rgb(40,147,196);
 }
 
