@@ -105,21 +105,33 @@
 
 //CORRECT NAVBAR METHOD
 //[
- function changeActiveByScroll() {
+function changeActiveByScroll() {
   var who = document.getElementById("who").offsetTop;
   var val = document.getElementById("valores").offsetTop;
   var parc = document.getElementById("parceiros").offsetTop;
   var cont = document.getElementById("contact").offsetTop;
 
   if(Math.abs(who - window.scrollY) < 20)
+  {
     changeActive(whoNav);
+  	showNavbar();
+  }
   else if(Math.abs(val - window.scrollY) < 20)
+  {
     changeActive(valoresNav);
+  	showNavbar();
+  }
   else if(Math.abs(parc - window.scrollY) < 20)
+  {
     changeActive(parceirosNav);
+  	showNavbar();
+  }
   else if(Math.abs(cont - window.scrollY) < 20 || Math.abs(window.scrollY - document.body.scrollHeight+window.innerHeight) < 50)
+  {
     changeActive(contactNav);
-  };
+  	showNavbar();
+  }  
+};
 //]
 
 //SHOW NAVBAR IN LIST FORMAT
